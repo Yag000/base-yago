@@ -30,9 +30,11 @@
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\Zn}[1]{\mathbb{Z}/#1\mathbb{Z}}
 \newcommand{\F}{\mathbb{F}}
-
 \newcommand{\Q}{\mathbb{Q}}
+
 \newcommand{\R}{\mathbb{R}}
+\newcommand{\Rn}{\R^n}
+
 \newcommand{\C}{\mathbb{C}}
 
 \newcommand{\K}{\mathbb{K}}
@@ -48,7 +50,6 @@
 
 \newcommand{\id}{\text{id}}
 
-\newcommand{\abs}[1]{\left|#1\right|}
 
 %% Polynomials
 
@@ -64,13 +65,28 @@
 
 %% Vector spaces
 
+\newcommand{\sprod}[2]{\left\langle #1, #2 \right\rangle}
+
 \newcommand{\LE}{\mathcal{L}(E)}
 
 \newcommand{\spec}{\text{Spec}}
-\newcommand{\vect}{\text{Vect}}
 
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\norm}[1]{\abs{\abs{#1}}}
+\newcommand{\normop}[1]{\abs{\abs{\abs{#1}}}}
+
+\newcommand{\dist}[2]{\text{ d}\left(#1, #2\right)}
+\newcommand{\vect}[1]{\text{Vect}\left( #1 \right)}
 
 \newcommand{\Mn}[2]{\mathcal{M}_{#1}(#2)}
+
+%% Probability notation
+
+\newcommand{\Pro}{\mathscr{P}}
+\newcommand{\E}{\mathbb{E}}
+
+\newcommand{\1}{\mathds{1}}
+
 
 %% Functions
 
@@ -85,9 +101,12 @@
 %% Abbreviations
 
 \newcommand{\ssi}{si et seulement si }
+\newcommand{\mssi}{\text{ si et seulement si }}
+
 \newcommand{\tlq}{telle que }
 \newcommand{\tq}{tel que }
 \newcommand{\cad}{c'est-à-dire }
+
 \newcommand{\ie}{\textit{i.e.} }
 \newcommand{\eg}{\textit{e.g.} }
 
