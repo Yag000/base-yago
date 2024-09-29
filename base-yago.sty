@@ -6,6 +6,13 @@
 \usepackage{color}
 \usepackage{xcolor}
 
+\hypersetup{
+	colorlinks,
+	linkcolor={red!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black}
+}
+
 \definecolor{red}{rgb}{1,0,0}
 \definecolor{green}{rgb}{0,1,0}
 \definecolor{darkgreen}{rgb}{0,0.5,0}
@@ -105,7 +112,9 @@
 
 %% Title
 
-\newcommand{\titlepageY}[2]{
+\usepackage{ifthen}
+
+\newcommand{\titlepageY}[3]{%
 	\fancypagestyle{toc}{%
 		\fancyhf{}%
 		\fancyhead[L]{\rightmark}%
@@ -121,6 +130,9 @@
 		\HRule\\[0.4cm]
 
 		\textsc{\Large #1}\\[0.5cm]
+		\ifthenelse{ \equal{#3}{} }
+		{ }
+		{\textsc{\large #3}\\[0.5cm] }
 
 		\HRule\\[1.5cm]
 
